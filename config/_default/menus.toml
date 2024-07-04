@@ -4,12 +4,12 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Demo"
+  name = "Home"
   url = "#hero"
   weight = 10
 
 [[main]]
-  name = "Posts"
+  name = "News"
   url = "#posts"
   weight = 20
 
