@@ -54,10 +54,6 @@ social:
     icon_pack: ai
     link: https://scholar.google.com/citations?user=IeKUpBQAAAAJ&hl=en
 
-  - icon: cv
-    icon_pack: ai
-    link: https://drive.google.com/file/d/1Pr_noFwCHv1WvjrUknTUgj4Toq1Sh3yO/view?usp=sharing
-
   - icon: github
     icon_pack: fab
     link: https://github.com/xutong05
@@ -65,6 +61,10 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/tong-xu-a802941b1/
+
+  - icon: cv
+    icon_pack: ai
+    link: https://drive.google.com/file/d/1Pr_noFwCHv1WvjrUknTUgj4Toq1Sh3yO/view?usp=sharing
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
