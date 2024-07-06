@@ -33,10 +33,6 @@ subtitle = ""
     name = "Deep Learning"
     tag = "Deep Learning"
 
-  [[content.filter_button]]
-    name = "Data Structure"
-    tag = "Data Structure"
-
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
