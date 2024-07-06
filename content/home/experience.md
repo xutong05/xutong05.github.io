@@ -10,7 +10,7 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 40
+weight: 30
 
 title: Experience
 subtitle:
@@ -25,22 +25,25 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   You can begin a multiline `description` using YAML's `|-`.
 experience:
-- company: GenCoin
-  company_url: ""
+- company: George Mason University
+  company_url: "https://cs.gmu.edu/"
+  logo: "media/img/GMU.png"
   date_end: ""
-  date_start: "2017-01-01"
+  date_start: "2023-08-15"
   description: |-
-    Responsibilities include:
-    * Analysing
-    * Modelling
-    * Deploying
-  location: California
-  title: CEO
-- company: University X
-  company_url: ""
-  date_end: "2016-12-31"
-  date_start: "2016-01-01"
-  description: Taught electronic engineering and researched semiconductor physics.
-  location: California
-  title: Professor
+    * Weekly office hour
+    * Teaching C++/Python lab
+  location: Fairfax
+  title: Graduate Teaching Assistant
+- company: H2X Lab
+  company_url: "https://eshed1.github.io/"
+  logo: "media/img/my-logo.svg"
+  date_end: "2022-08-31"
+  date_start: "2022-05-15"
+  description: |-
+    * Helping DeepVO Project
+    * Analysing Visual Odometry tasks
+    * Finishing OpenGuide Project
+  location: Boston
+  title: Visiting Researcher
 ---
