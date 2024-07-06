@@ -45,8 +45,7 @@ subtitle:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
-- **08/2023:** I began my CS PhD journey in George Mason University.
-- **05/2023:** I graduated from University of Southern California.
-- **06/2022:** We finished the project [OpenGuide](https://open-guide-idc.github.io/) - A Scalable Human-Like Guidance System for Travelers with Visual Impairment.
-- **05/2022:** I joined [Human-to-Everything (H2X) Lab](https://eshed1.github.io/) as **visiting researcher**, supervised by Prof. [Eshed Ohn-Bar](https://www.bu.edu/eng/profile/ohn-bar-eshed/).
-- **06/2021:** I graduated from Nanjing University of Information Science & Technology.
+- **08/2023:** I began my PhD journey in [RobotiXX Lab](https://cs.gmu.edu/~xiao/RobotiXX/lab.html) at George Mason University, supervised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/).
+- **05/2023:** I graduated from [University of Southern California](https://www.usc.edu/).
+- **05/2022:** I joined [Human-to-Everything (H2X) Lab](https://eshed1.github.io/) as **visiting researcher** at [Boston University](https://www.bu.edu/eng/academics/departments-and-divisions/electrical-and-computer-engineering/), supervised by Prof. [Eshed Ohn-Bar](https://www.bu.edu/eng/profile/ohn-bar-eshed/).
+- **06/2021:** I graduated from [Nanjing University of Information Science & Technology](https://www.nuist.edu.cn/main.htm).
