@@ -24,9 +24,9 @@ bio: My research interests include robotics, reinforcement learning and navigati
 
 # Interests to show in About widget
 interests:
-  - Robotics
   - Reinforcement Learning
-  - Off-road Navigation
+  - Field Robotics
+  - Legged Robotics
 
 # Education to show in About widget
 education:
@@ -64,7 +64,7 @@ social:
 
   - icon: cv
     icon_pack: ai
-    link: https://drive.google.com/file/d/1Pr_noFwCHv1WvjrUknTUgj4Toq1Sh3yO/view?usp=sharing
+    link: files/CV_Tong.pdf
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
