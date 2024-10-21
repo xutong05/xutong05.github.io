@@ -2,7 +2,7 @@
 title: OpenGuide
 summary: A Scalable Human-Like Guidance System for Travelers with Visual Impairment.
 tags:
-  - Deep Learning
+  - Learning
 date: '2022-06-10T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
@@ -16,12 +16,14 @@ image:
 links:
   - icon: github
     icon_pack: fab
-    name: Source code
+    name: Code
     url: https://github.com/open-guide-idc/open-guide-assist
-  - icon: play
+
+  - icon: globe
     icon_pack: fas
-    name: Demo
+    name: Website
     url: https://open-guide-idc.github.io/
+    
 url_code: ''
 url_pdf: ''
 url_slides: ''
