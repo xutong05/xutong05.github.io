@@ -82,4 +82,5 @@ highlight_name: true
 
 I am **Tong Xu (徐通)**, a PhD student at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I hold a M.S. Degree from University of Southern California and a B.E. Degree from Nanjing University of Information Science & Technology. 
 
-My primary research interests include robotics, reinforcement learning and off-road navigation. I have worked on visual odometry tasks with FlowNet pretrained structure and LSTM models when visiting Boston University.
+My primary research interests include robotics, reinforcement learning and off-road navigation. My current work on automatic curriculum learning for field and legged robotics reflects my dedication to advancing real-world reinforcement learning applications in robotics through cutting-edge AI techniques.
+

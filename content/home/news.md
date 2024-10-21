@@ -45,7 +45,8 @@ subtitle:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
+- **09/2024:** One paper about reinforcement learning navigation is accepted by 2024 IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR)!
 - **08/2023:** I began my PhD journey in [RobotiXX Lab](https://cs.gmu.edu/~xiao/RobotiXX/lab.html) at George Mason University, supervised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/).
-- **05/2023:** I graduated from [University of Southern California](https://www.usc.edu/).
-- **05/2022:** I joined [Human-to-Everything (H2X) Lab](https://eshed1.github.io/) as **visiting researcher** at [Boston University](https://www.bu.edu/eng/academics/departments-and-divisions/electrical-and-computer-engineering/), supervised by Prof. [Eshed Ohn-Bar](https://www.bu.edu/eng/profile/ohn-bar-eshed/).
-- **06/2021:** I graduated from [Nanjing University of Information Science & Technology](https://www.nuist.edu.cn/main.htm).
+- **05/2023:** I graduated from University of Southern California.
+- **05/2022:** I joined [Human-to-Everything (H2X) Lab](https://eshed1.github.io/) as **visiting researcher** at Boston University, supervised by Prof. [Eshed Ohn-Bar](https://www.bu.edu/eng/profile/ohn-bar-eshed/).
+- **06/2021:** I graduated from Nanjing University of Information Science & Technology.

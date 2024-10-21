@@ -15,11 +15,11 @@ authors:
   # - 'Equal contribution'
   # - 'Equal contribution'
 
-date: '2021-08-06T00:00:00Z'
-doi: '10.1007/s12652-020-02569-9'
+date: '2021-08-06'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2020-11-20T00:00:00Z'
+publishDate: ''
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -28,25 +28,25 @@ publishDate: '2020-11-20T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Journal of Ambient Intelligence and Humanized Computing*'
-publication_short: '*Journal of Ambient Intelligence and Humanized Computing*'
+publication: 'Journal of Ambient Intelligence and Humanized Computing'
+publication_short: 'Journal of Ambient Intelligence and Humanized Computing'
 
 abstract: Facial recognition has now played a pivotal role in many applications, including biomechanics, sports, image segment, animation, and robotics, etc. Although commercial facial recognition is matured, micro-expression recognition is still in its infancy and has attracted more attention from researchers in recent years. Usually, test and training samples can be recorded by different equipment throughout a variety of conditions, or by heterologous species. As a result, it is necessary to investigate whether the common micro-expression recognition algorithm is still feasible when the test samples are different from the training samples. In the present study, a series of well-developed algorithms for multi-source domain adaptation, the basic principles of multi-source domain adaptation, and the feature representation method has been discussed. A new method called the novel super-wide regression network (SWiRN) model has been introduced. Finally, some loss functions that are commonly used in neural networks for multiple source domain adaptations have been presented.
 
 # Summary. An optional shortened abstract.
-summary: Facial recognition has now played a pivotal role in many applications, including biomechanics, sports, image segment, animation, and robotics, etc. Although commercial facial recognition is matured, micro-expression recognition is still in its infancy and has attracted more attention from researchers in recent years. Usually, test and training samples can be recorded by different equipment throughout a variety of conditions, or by heterologous species. As a result, it is necessary to investigate whether the common micro-expression recognition algorithm is still feasible when the test samples are different from the training samples. In the present study, a series of well-developed algorithms for multi-source domain adaptation, the basic principles of multi-source domain adaptation, and the feature representation method has been discussed. A new method called the novel super-wide regression network (SWiRN) model has been introduced. Finally, some loss functions that are commonly used in neural networks for multiple source domain adaptations have been presented.
+summary: A new method called the novel super-wide regression network (SWiRN) model has been introduced. Finally, some loss functions that are commonly used in neural networks for multiple source domain adaptations have been presented.
 
-tags: ["Micro-expression recognition","Multi-source domain adaptation","Super wide regression network model"]
+tags: ["Micro-expression recognition","Multi-source domain adaptation"]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://link.springer.com/content/pdf/10.1007/s12652-020-02569-9.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -67,12 +67,12 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: ''
+# projects: ''
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: ''
+# slides: ''
 ---

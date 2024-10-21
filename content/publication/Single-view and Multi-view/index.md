@@ -12,11 +12,11 @@ authors:
   # - 'Equal contribution'
   # - 'Equal contribution'
 
-date: '2019-10-15T00:00:00Z'
-doi: '10.1088/1742-6596/1335/1/012022'
+date: '2019-10-15'
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2019-10-15T00:00:00Z'
+publishDate: ''
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -25,18 +25,18 @@ publishDate: '2019-10-15T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Journal of Physics - Conference Series*'
-publication_short: '*Journal of Physics - Conference Series*'
+publication: 'Journal of Physics - Conference Series'
+publication_short: 'Journal of Physics - Conference Series'
 
 abstract: Human motion capture has now played a pivotal role in more and more applications, including biomechanics, sports, image segment, animation, robotics, etc. Although commercial marker-based human motion capture models have matured, the shortcomings, such as obtrusion, expense, errors due to damage to the marker trajectories, long set-up times and etc. exposed by this approach are becoming more and more apparent. Marker-less human motion capture analysis is likely to provide inexpensive and efficient solutions to solving these problems for the reconstruction of human motion in the future. In this paper, we discuss and compare the background and characteristics of marker-based and marker-less human motion capture models. Then we divide the marker-less human motion capture into single view and multi view and display some popular models. These methods are also categorized according to their internal logic and algorithms. Finally, we present some of the major shortcomings of the current marker-less human motion capture models and the future direction of development.
 
 # Summary. An optional shortened abstract.
-summary: Human motion capture has now played a pivotal role in more and more applications, including biomechanics, sports, image segment, animation, robotics, etc. Although commercial marker-based human motion capture models have matured, the shortcomings, such as obtrusion, expense, errors due to damage to the marker trajectories, long set-up times and etc. exposed by this approach are becoming more and more apparent. Marker-less human motion capture analysis is likely to provide inexpensive and efficient solutions to solving these problems for the reconstruction of human motion in the future. In this paper, we discuss and compare the background and characteristics of marker-based and marker-less human motion capture models. Then we divide the marker-less human motion capture into single view and multi view and display some popular models. These methods are also categorized according to their internal logic and algorithms. Finally, we present some of the major shortcomings of the current marker-less human motion capture models and the future direction of development.
+summary: Survey for Single-view and Multi-view Methods in Marker-less 3D Human Motion Capture 
 
 tags: ["Single-view","Multi-view","Motion capture"]
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
@@ -64,12 +64,12 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: ''
+# projects: ''
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: ''
+# slides: ''
 ---
