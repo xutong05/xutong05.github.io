@@ -64,7 +64,7 @@ social:
 
   - icon: cv
     icon_pack: ai
-    link: files/CV_Tong.pdf
+    link: files/TongXu_CV.pdf
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
