@@ -92,6 +92,19 @@
   min-width: 110px !important;
 }
 
+/* PUBLICATIONS - Desktop/tablet: vertically center image to text */
+@media screen and (min-width: 992px) {
+  #publications .media {
+    display: flex !important;
+    align-items: center !important; /* vertically center image and text */
+  }
+
+  #publications .stream-item .mr-3,
+  #publications .stream-item .ml-3 {
+    align-self: center !important; /* ensure image column centers */
+  }
+}
+
 /* Projects filter bar: force primary buttons to #1565c0 */
 #projects .project-toolbar .btn.btn-primary {
   background-color: #1565c0 !important;
