@@ -129,3 +129,163 @@
   transform: scale(1.06);
   box-shadow: 0 0 0 0.2rem rgba(21, 101, 192, 0.3), 0 8px 16px rgba(21, 101, 192, 0.2) !important;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* Mobile: Tablets and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+  /* Publications Section - Mobile Responsive */
+
+  /* Stack publication items vertically */
+  #publications .stream-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Make publication images smaller on mobile */
+  #publications .stream-item .mr-3 {
+    max-width: 180px !important;
+    margin-right: 0 !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+
+  #publications .stream-item .mr-3 img {
+    max-width: 180px !important;
+  }
+
+  /* Center and adjust publication text */
+  #publications .media-body {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Reduce title size on mobile */
+  #publications .article-title {
+    font-size: 1.1rem !important;
+  }
+
+  /* Stack publication filters vertically */
+  #publications .form-row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  #publications .form-row .col-auto {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Make filter controls full width on mobile */
+  #publications .filter-search,
+  #publications .pub-filters {
+    width: 100% !important;
+    border-radius: 0.25rem !important;
+  }
+
+  /* Projects Section - Mobile Responsive */
+
+  /* Stack project cards vertically */
+  #projects .project-showcase .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Adjust project card layout for mobile */
+  #projects .project-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Make project images responsive */
+  #projects .project-card img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Stack project filter buttons vertically */
+  #projects .project-toolbar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  #projects .project-toolbar .btn {
+    width: 100% !important;
+    margin-bottom: 0.5rem !important;
+    margin-right: 0 !important;
+  }
+
+  /* Adjust project content padding */
+  #projects .project-card .card-text {
+    padding: 0 1rem !important;
+  }
+
+  /* News Section - Mobile Responsive */
+  #news ul {
+    padding-left: 1.2rem !important;
+  }
+
+  #news ul li {
+    margin-bottom: 0.8rem !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* Mobile: Small phones (max-width: 576px) */
+@media screen and (max-width: 576px) {
+
+  /* Publications - Extra small screens */
+  #publications .stream-item .mr-3 {
+    max-width: 150px !important;
+  }
+
+  #publications .stream-item .mr-3 img {
+    max-width: 150px !important;
+  }
+
+  #publications .article-title {
+    font-size: 1rem !important;
+  }
+
+  /* Projects - Extra small screens */
+  #projects .project-toolbar .btn {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  /* Reduce section heading size */
+  .section-heading h1 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Adjust overall container padding */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Landscape mobile devices */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+  /* Allow horizontal layout for publications in landscape */
+  #publications .stream-item {
+    flex-direction: row !important;
+  }
+
+  #publications .stream-item .mr-3 {
+    margin-right: 1rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  #publications .media-body {
+    text-align: left !important;
+  }
+}
