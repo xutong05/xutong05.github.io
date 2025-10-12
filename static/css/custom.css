@@ -232,7 +232,20 @@
     text-align: center !important;
   }
 
+  /* Also handle left-margin image container variant */
+  #publications .stream-item .ml-3 {
+    max-width: 200px !important;
+    margin-left: 0 !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+
   #publications .stream-item .mr-3 img {
+    max-width: 200px !important;
+    width: auto !important;
+  }
+
+  #publications .stream-item .ml-3 img {
     max-width: 200px !important;
     width: auto !important;
   }
@@ -243,30 +256,36 @@
     text-align: center !important;
   }
 
-  /* Single-line titles with ellipsis - smaller font */
+  /* Publication titles: wrap on mobile to stay in view */
   #publications .article-title {
     font-size: 0.95rem !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
     max-width: 100% !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
   }
 
   #publications .article-title a {
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
     display: block !important;
     font-size: 0.95rem !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
   }
 
-  /* Fix publication metadata and abstract - smaller font */
+  /* Authors/metadata: allow wrapping so names stay visible */
   #publications .article-metadata,
   #publications .article-metadata .article-metadata-simple {
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
     font-size: 0.85rem !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
   }
 
   /* Smaller font for all publication text */
