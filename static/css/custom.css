@@ -130,6 +130,36 @@
   box-shadow: 0 0 0 0.2rem rgba(21, 101, 192, 0.3), 0 8px 16px rgba(21, 101, 192, 0.2) !important;
 }
 
+/* Center Projects images and text, prevent overflow */
+#projects .project-card .card {
+  overflow: hidden !important;
+}
+
+#projects .project-card .card-image,
+#projects .project-card .card-image img,
+#projects .project-card .img-responsive {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+#projects .project-card .card-text,
+#projects .project-card .card-text h4,
+#projects .project-card .card-text .article-style,
+#projects .project-card .card-text p {
+  text-align: center !important;
+}
+
+/* Ensure long words/titles wrap instead of overflowing */
+#projects .project-card .card-text h4,
+#projects .project-card .card-text p,
+#projects .project-card .card-text .article-style {
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
+
 /* ============================================
    MOBILE & TABLET ONLY STYLES
    ============================================ */
@@ -140,6 +170,48 @@
   /* Prevent horizontal scroll */
   body {
     overflow-x: hidden !important;
+  }
+
+  /* Global mobile containment: keep all sections within viewport */
+  .home-section,
+  .home-section .container,
+  .home-section .row {
+    overflow-x: hidden !important;
+  }
+
+  /* Media elements scale to viewport */
+  img,
+  video,
+  iframe,
+  embed {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Wrap button toolbars to avoid horizontal scroll */
+  .btn-toolbar,
+  .btn-group {
+    flex-wrap: wrap !important;
+  }
+
+  /* Make wide tables scrollable rather than overflowing */
+  .home-section table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Keep Publications section title on one line */
+  #publications .section-heading {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  #publications .section-heading h1 {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
   /* PUBLICATIONS - Mobile fixes */
@@ -171,9 +243,9 @@
     text-align: center !important;
   }
 
-  /* Single-line titles with ellipsis */
+  /* Single-line titles with ellipsis - smaller font */
   #publications .article-title {
-    font-size: 1.1rem !important;
+    font-size: 0.95rem !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
@@ -185,6 +257,35 @@
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     display: block !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Fix publication metadata and abstract - smaller font */
+  #publications .article-metadata,
+  #publications .article-metadata .article-metadata-simple {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Smaller font for all publication text */
+  #publications .media-body p,
+  #publications .article-style,
+  #publications .stream-meta {
+    font-size: 0.85rem !important;
+  }
+
+  #publications .btn-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.3rem !important;
+  }
+
+  /* Compact publication item spacing */
+  #publications .stream-item {
+    margin-bottom: 2rem !important;
   }
 
   /* Stack publication filters vertically */
@@ -204,90 +305,47 @@
   }
 
   /* PROJECTS - Mobile fixes */
-
-  /* Center all project content */
-  #projects .js-layout-row {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+  #projects .projects-container {
+    overflow: visible !important; /* avoid clipping images */
   }
 
-  #projects .js-layout-row > div {
-    max-width: 100% !important;
+  /* Ensure one column and no horizontal overflow */
+  #projects .project-card,
+  #projects .project-item {
     width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* Make project images fit within viewport */
-  #projects img {
-    max-width: 100% !important;
+  /* Card images and showcase images scale and center */
+  #projects .card-image,
+  #projects .card-image img,
+  #projects .img-responsive,
+  #projects .project-showcase img {
     width: 100% !important;
+    max-width: 100% !important;
     height: auto !important;
-    object-fit: contain !important;
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* Center project text */
-  #projects .card,
+  /* Center project text in all views */
   #projects .card-text,
+  #projects .card-text h4,
   #projects .article-style,
-  #projects h3,
-  #projects .card-title {
+  #projects .article-title,
+  #projects .btn-links {
     text-align: center !important;
   }
 
-  /* Ensure containers don't overflow */
-  #projects .isotope-item,
-  #projects .portfolio-item,
-  #projects .card,
-  #projects > .container,
-  #projects .row,
-  #projects [class*="col-"] {
-    max-width: 100% !important;
-    overflow: hidden !important;
+  /* Wrap long words to avoid overflow */
+  #projects .card-text h4,
+  #projects .article-title,
+  #projects .article-style,
+  #projects .card-text p {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
   }
 
-  /* Stack project filter buttons */
-  #projects .project-toolbar {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  #projects .project-toolbar .btn {
-    width: 100% !important;
-    margin-bottom: 0.5rem !important;
-  }
-}
-
-/* Small phones only (max-width: 576px) */
-@media screen and (max-width: 576px) {
-
-  /* Smaller publication images on phones */
-  #publications .stream-item .mr-3 {
-    max-width: 150px !important;
-  }
-
-  #publications .stream-item .mr-3 img {
-    max-width: 150px !important;
-  }
-
-  /* Smaller title font on phones */
-  #publications .article-title {
-    font-size: 0.95rem !important;
-  }
-
-  /* Smaller project buttons */
-  #projects .project-toolbar .btn {
-    font-size: 0.9rem !important;
-    padding: 0.5rem 1rem !important;
-  }
-
-  /* Reduce heading size */
-  .section-heading h1 {
-    font-size: 1.5rem !important;
-  }
 }
