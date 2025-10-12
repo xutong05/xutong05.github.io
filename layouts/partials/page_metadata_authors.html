@@ -1,0 +1,30 @@
+{{/* Display author list. */}}
+
+{{- $taxonomy := "authors" }}
+{{ with .Param $taxonomy }}
+  {{ $link_authors := site.Params.link_authors | default true }}
+  {{ range $index, $name_raw := . }}
+    {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy .) -}}
+    {{- $name := $profile_page.Title | default $name_raw -}}
+    {{- if gt $index 0 }}, {{ end -}}
+    {{- $is_bold := false -}}
+    {{- if and (site.Params.highlight_superuser) (eq $profile_page.Params.superuser true) -}}
+      {{- $is_bold = true -}}
+    {{- end -}}
+    {{- if or (eq $name_raw "T. Xu") (eq $name_raw "Tong Xu") -}}
+      {{- $is_bold = true -}}
+    {{- end -}}
+    <span {{ if $is_bold }}class="font-weight-bold"{{end}}>
+      {{- if and $profile_page $link_authors -}}
+        <a href="{{$profile_page.RelPermalink}}">{{$name}}</a>
+      {{- else -}}
+        {{$name}}
+      {{- end -}}
+    </span>
+    {{- if isset $.Params "author_notes" -}}
+      {{- with (index $.Params.author_notes $index) -}}
+        <i title="{{.}}" class="fas fa-info-circle author-notes"></i>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,25 @@
+/* Limit news items to show only first 6 */
+#news ul li:nth-child(n+7) {
+  display: none;
+}
+
+/* Match news text size with regular body text */
+#news ul li {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Align icons vertically with bullet points and match text size */
+#news ul li .svg-inline--fa {
+  font-size: 20em;
+  vertical-align: middle;
+  margin-right: 0.25em;
+  position: relative;
+  top: -0.1em;
+}
+
+/* Make experience section logos larger */
+.experience .card-body img {
+  width: 100px !important;
+  max-width: 100px;
+}

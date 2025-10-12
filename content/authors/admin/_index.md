@@ -20,13 +20,14 @@ organizations:
     url: "https://cs.gmu.edu/~xiao/RobotiXX/lab.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include robotics, reinforcement learning and navigation.
+bio: My research interests include robotics, motion planning, reinforcement learning, and foundation models.
 
 # Interests to show in About widget
 interests:
+  - Robotics
+  - Motion Planning
   - Reinforcement Learning
-  - Field Robotics
-  - Legged Robotics
+  - Foundation Models
 
 # Education to show in About widget
 education:
@@ -50,6 +51,10 @@ social:
     icon_pack: fas
     link: "mailto:txu25@gmu.edu"
 
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/tong-xu-a802941b1/
+
   - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: ai
     link: https://scholar.google.com/citations?user=IeKUpBQAAAAJ&hl=en
@@ -57,10 +62,6 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/xutong05
-
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/in/tong-xu-a802941b1/
 
   - icon: cv
     icon_pack: ai
@@ -80,7 +81,7 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am **Tong Xu (徐通)**, a PhD student at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I hold a M.S. Degree from University of Southern California and a B.E. Degree from Nanjing University of Information Science & Technology. 
+I am a third-year PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
 
-My primary research interests include robotics, reinforcement learning and off-road navigation. My current work on automatic curriculum learning for field and legged robotics reflects my dedication to advancing real-world reinforcement learning applications in robotics through cutting-edge AI techniques.
+My primary research interests include robotics, reinforcement learning and foundation models. My current work on fast adaptation for cross-embediments reflects my dedication to advance real-world general-purpose applications in robotics through large-scale machine learning techniques.
 

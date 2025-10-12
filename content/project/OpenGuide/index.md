@@ -2,7 +2,7 @@
 title: OpenGuide
 summary: A Scalable Human-Like Guidance System for Travelers with Visual Impairment.
 tags:
-  - Learning
+  - Deep Learning
 date: '2022-06-10T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

@@ -1,6 +1,6 @@
 ---
 title: DeepVO
-summary: Reproduced DeepVO network architectures by integrating FlowNetSimple pretrained model with LSTM. Improved the influence of epochs by 14.8% and hyperparameter by 8.4% in the loss function of DeepVO network, using KITTI and nuScenes datasets, based on translation and rotation RMSE values 
+summary: Reproduced Deep Visual Odometry architecture by integrating a pretrained FlowNetSimple model with LSTM. Achieved 14.8% performance improvement through epoch optimization and 8.4% improvement through hyperparameter tuning in the loss function, evaluated on KITTI and nuScenes datasets using translation and rotation RMSE metrics. 
 tags:
   - Visual Odometry
 date: '2022-08-28T00:00:00Z'

@@ -1,0 +1,131 @@
+/* Custom styles for news section */
+
+/* Align icons vertically with bullet points and match text size */
+#news ul li i.fas,
+#news ul li i.fa,
+#news ul li svg.svg-inline--fa {
+  font-size: 0.85em !important;
+  vertical-align: middle !important;
+  margin-left: 0.2em !important;
+  margin-right: 0.05em !important;
+  position: relative !important;
+  top: -0.08em !important;
+}
+
+/* Match news text size with regular body text */
+#news ul li {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Enlarge and align the News "Show More / Show Less" toggle */
+#news-toggle {
+  font-size: 0.8rem !important; /* increase if desired */
+  line-height: 1.5 !important;
+}
+
+#news-toggle i {
+  vertical-align: middle !important;
+  margin-left: 0.35em !important; /* spacing like see-all */
+}
+
+/* Publications section - make left column (title) smaller, right column larger */
+#publications .section-heading {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+#publications .section-heading h1 {
+  margin-bottom: 1.2rem !important;
+}
+
+#publications .section-heading + div {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Make publication images larger */
+#publications .stream-item .mr-3 {
+  max-width: 250px !important;
+  flex-shrink: 0 !important;
+}
+
+#publications .stream-item .mr-3 img {
+  max-width: 250px !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Make publication titles larger */
+#publications .article-title {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+}
+
+/* Add more spacing around publication content */
+#publications .stream-item .mr-3 {
+  margin-right: 1.2rem !important;
+}
+
+#publications .media-body {
+  flex: 1 !important;
+}
+
+/* Add vertical divider lines between filter controls */
+.pub-filters.form-control {
+  border: 1px solid #ced4da !important;
+  border-left: 1px solid #dee2e6 !important;
+  border-radius: 0 !important;
+}
+
+.form-row .col-auto:first-child .filter-search {
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.form-row .col-auto:last-child .pub-filters {
+  border-radius: 0 0.25rem 0.25rem 0 !important;
+}
+
+/* Make date dropdown wider */
+.pub-filters[data-filter-group="year"] {
+  min-width: 110px !important;
+}
+
+/* Projects filter bar: force primary buttons to #1565c0 */
+#projects .project-toolbar .btn.btn-primary {
+  background-color: #1565c0 !important;
+  border-color: #1565c0 !important;
+  color: #fff !important;
+  transition: background-color 0.12s ease, border-color 0.12s ease,
+              transform 0.12s ease, box-shadow 0.12s ease;
+  transform-origin: center center;
+}
+
+#projects .project-toolbar .btn.btn-primary:hover {
+  background-color: #0d47a1 !important; /* darker hover */
+  border-color: #0d47a1 !important;
+  color: #fff !important;
+  transform: scale(1.03);
+}
+
+#projects .project-toolbar .btn.btn-primary:focus {
+  background-color: #0d47a1 !important; /* match hover color on focus */
+  border-color: #0d47a1 !important;
+  color: #fff !important;
+  outline: none !important;
+  transform: scale(1.05);
+  /* Darker outer focus ring + deeper shadow */
+  box-shadow: 0 0 0 0.25rem rgba(6, 35, 77, 0.65), 0 6px 12px rgba(6, 35, 77, 0.65) !important;
+}
+
+#projects .project-toolbar .btn.btn-primary.active,
+#projects .project-toolbar .btn.btn-primary:active,
+#projects .project-toolbar .btn.btn-primary:not(:disabled):not(.disabled).active,
+#projects .project-toolbar .btn.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #0b3c91 !important; /* active pressed */
+  border-color: #0b3c91 !important;
+  color: #fff !important;
+  transform: scale(1.06);
+  box-shadow: 0 0 0 0.2rem rgba(21, 101, 192, 0.3), 0 8px 16px rgba(21, 101, 192, 0.2) !important;
+}

@@ -1,6 +1,7 @@
 {{/* Display author list. */}}
 
 {{- $taxonomy := "authors" }}
+{{- $has_notes := false -}}
 {{ with .Param $taxonomy }}
   {{ $link_authors := site.Params.link_authors | default true }}
   {{ range $index, $name_raw := . }}
@@ -16,8 +17,14 @@
     </span>
     {{- if isset $.Params "author_notes" -}}
       {{- with (index $.Params.author_notes $index) -}}
-        <span title="{{.}}" class="author-notes">(?)</span>
+        <sup>*</sup>
+        {{- $has_notes = true -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}
+{{- end -}}
+{{- if $has_notes -}}
+  <div class="author-notes-footer" style="font-size: 0.85em; margin-top: 0.5em;">
+    <sup>*</sup> Equal contribution
+  </div>
 {{- end -}}

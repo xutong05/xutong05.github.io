@@ -1,8 +1,8 @@
 ---
 title: Cone Detection
-summary: Reproduced Faster R-CNN model by integrating Region Proposal Network module with Fast R-CNN. Improved the performance of Faster R-CNN model by 37.4% in terms of recall rate compared with YOLOv3 model on cone annotated dataset
+summary: Implemented Faster R-CNN for cone detection by integrating Region Proposal Network with Fast R-CNN. Achieved 37.4% higher recall rate compared to YOLOv3 on a cone-annotated dataset, demonstrating superior detection performance.
 tags:
-  - Learning
+  - Deep Learning
 date: '2022-07-31T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).

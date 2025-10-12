@@ -1,0 +1,138 @@
+{{ $st := .page }}
+{{ $columns := $st.Params.design.columns | default "2" }}
+{{ $limit := $st.Params.design.limit | default 0 }}
+{{ $widget_id := $st.File.ContentBaseName }}
+
+<div class="row">
+  {{ if ne $columns "1" }}
+    <div class="col-12 col-lg-4 section-heading">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+    <div class="col-12 col-lg-8">
+      {{ if gt $limit 0 }}
+        <div id="{{ $widget_id }}-content" class="collapsible-content">
+          {{ $st.Content }}
+        </div>
+        <div class="mt-3">
+          <button id="{{ $widget_id }}-toggle" class="btn btn-sm btn-outline-primary" type="button">
+            Show More <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+        <script>
+          (function() {
+            function initToggle() {
+              const limit = {{ $limit }};
+              const contentDiv = document.getElementById('{{ $widget_id }}-content');
+              const toggleBtn = document.getElementById('{{ $widget_id }}-toggle');
+
+              if (!contentDiv || !toggleBtn) {
+                console.error('Content div or toggle button not found');
+                return;
+              }
+
+              const listItems = contentDiv.querySelectorAll('ul li');
+              let isExpanded = false;
+
+              function updateDisplay() {
+                listItems.forEach((item, index) => {
+                  if (index >= limit) {
+                    item.style.display = isExpanded ? 'list-item' : 'none';
+                  }
+                });
+
+                if (listItems.length <= limit) {
+                  toggleBtn.style.display = 'none';
+                } else {
+                  toggleBtn.innerHTML = isExpanded
+                    ? 'Show Less <i class="fas fa-chevron-up"></i>'
+                    : 'Show More <i class="fas fa-chevron-down"></i>';
+                }
+              }
+
+              toggleBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                isExpanded = !isExpanded;
+                updateDisplay();
+              });
+
+              updateDisplay();
+            }
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initToggle);
+            } else {
+              initToggle();
+            }
+          })();
+        </script>
+      {{ else }}
+        {{ $st.Content }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="col-lg-12">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+      {{ if gt $limit 0 }}
+        <div id="{{ $widget_id }}-content" class="collapsible-content">
+          {{ $st.Content }}
+        </div>
+        <div class="mt-3">
+          <button id="{{ $widget_id }}-toggle" class="btn btn-sm btn-outline-primary" type="button">
+            <i class="fas fa-chevron-down"></i> Show More
+          </button>
+        </div>
+        <script>
+          (function() {
+            function initToggle() {
+              const limit = {{ $limit }};
+              const contentDiv = document.getElementById('{{ $widget_id }}-content');
+              const toggleBtn = document.getElementById('{{ $widget_id }}-toggle');
+
+              if (!contentDiv || !toggleBtn) {
+                console.error('Content div or toggle button not found');
+                return;
+              }
+
+              const listItems = contentDiv.querySelectorAll('ul li');
+              let isExpanded = false;
+
+              function updateDisplay() {
+                listItems.forEach((item, index) => {
+                  if (index >= limit) {
+                    item.style.display = isExpanded ? 'list-item' : 'none';
+                  }
+                });
+
+                if (listItems.length <= limit) {
+                  toggleBtn.style.display = 'none';
+                } else {
+                  toggleBtn.innerHTML = isExpanded
+                    ? '<i class="fas fa-chevron-up"></i> Show Less'
+                    : '<i class="fas fa-chevron-down"></i> Show More';
+                }
+              }
+
+              toggleBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                isExpanded = !isExpanded;
+                updateDisplay();
+              });
+
+              updateDisplay();
+            }
+
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', initToggle);
+            } else {
+              initToggle();
+            }
+          })();
+        </script>
+      {{ else }}
+        {{ $st.Content }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

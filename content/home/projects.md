@@ -26,8 +26,8 @@ subtitle = ""
     tag = "*"
 
   [[content.filter_button]]
-    name = "Learning"
-    tag = "Learning"
+    name = "Deep Learning"
+    tag = "Deep Learning"
 
   [[content.filter_button]]
     name = "Visual Odometry"
