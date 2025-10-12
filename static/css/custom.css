@@ -131,74 +131,64 @@
 }
 
 /* ============================================
-   MOBILE RESPONSIVE STYLES
+   MOBILE & TABLET ONLY STYLES
    ============================================ */
 
-/* Mobile: Tablets and smaller (max-width: 768px) */
-@media screen and (max-width: 768px) {
+/* Tablets and Mobile devices only (max-width: 991px) */
+@media screen and (max-width: 991px) {
 
-  /* Global mobile constraints */
+  /* Prevent horizontal scroll */
   body {
     overflow-x: hidden !important;
   }
 
-  * {
-    max-width: 100vw !important;
-  }
+  /* PUBLICATIONS - Mobile fixes */
 
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  /* Publications Section - Mobile Responsive */
-
-  /* Stack publication items vertically */
+  /* Stack publication items vertically and center */
   #publications .stream-item,
-  #publications .media,
-  section#publications .stream-item,
-  section[id="publications"] .stream-item {
+  #publications .media {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  /* Make publication images smaller on mobile */
+  /* Make publication images smaller and centered */
   #publications .stream-item .mr-3 {
-    max-width: 180px !important;
+    max-width: 200px !important;
     margin-right: 0 !important;
     margin-bottom: 1rem !important;
     text-align: center !important;
   }
 
   #publications .stream-item .mr-3 img {
-    max-width: 180px !important;
+    max-width: 200px !important;
+    width: auto !important;
   }
 
-  /* Center and adjust publication text */
+  /* Center publication content */
   #publications .media-body {
     width: 100% !important;
     text-align: center !important;
   }
 
-  /* Reduce title size on mobile and allow proper wrapping */
+  /* Single-line titles with ellipsis */
   #publications .article-title {
-    font-size: 1.05rem !important;
-    line-height: 1.4 !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
-    hyphens: auto !important;
+    font-size: 1.1rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
   }
 
   #publications .article-title a {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
     display: block !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
   }
 
   /* Stack publication filters vertically */
   #publications .form-row {
-    display: flex !important;
     flex-direction: column !important;
   }
 
@@ -208,108 +198,75 @@
     margin-bottom: 0.5rem !important;
   }
 
-  /* Make filter controls full width on mobile */
   #publications .filter-search,
   #publications .pub-filters {
     width: 100% !important;
-    border-radius: 0.25rem !important;
   }
 
-  /* Projects Section - Mobile Responsive */
+  /* PROJECTS - Mobile fixes */
 
-  /* Stack project cards vertically */
-  #projects .project-showcase .col-12 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Adjust project card layout for mobile */
-  #projects .project-card {
+  /* Center all project content */
+  #projects .js-layout-row {
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important;
   }
 
-  /* Make project images responsive and contained */
-  #projects img,
-  #projects .project-card img,
-  #projects .showcase-item img,
-  #projects .card-img-top,
-  section#projects img,
-  section[id="projects"] img,
-  .portfolio-item img,
-  .isotope-item img {
+  #projects .js-layout-row > div {
+    max-width: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Make project images fit within viewport */
+  #projects img {
     max-width: 100% !important;
     width: 100% !important;
     height: auto !important;
-    margin-bottom: 1rem !important;
     object-fit: contain !important;
     display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  /* Ensure project containers don't overflow */
-  #projects .isotope-item,
-  #projects .project-item,
+  /* Center project text */
   #projects .card,
+  #projects .card-text,
+  #projects .article-style,
+  #projects h3,
+  #projects .card-title {
+    text-align: center !important;
+  }
+
+  /* Ensure containers don't overflow */
+  #projects .isotope-item,
   #projects .portfolio-item,
-  section#projects .isotope-item,
-  section#projects > .container,
-  section#projects .row,
-  section#projects [class*="col-"] {
+  #projects .card,
+  #projects > .container,
+  #projects .row,
+  #projects [class*="col-"] {
     max-width: 100% !important;
     overflow: hidden !important;
   }
 
-  /* Fix showcase view specifically */
-  #projects .js-layout-row,
-  section#projects .js-layout-row {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    max-width: 100% !important;
-  }
-
-  #projects .js-layout-row > div,
-  section#projects .js-layout-row > div,
-  #projects .js-layout-row .col-lg-6,
-  #projects .js-layout-row .col-lg-12 {
-    max-width: 100% !important;
-    width: 100% !important;
-    flex: 0 0 100% !important;
-  }
-
-  /* Stack project filter buttons vertically */
+  /* Stack project filter buttons */
   #projects .project-toolbar {
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important;
   }
 
   #projects .project-toolbar .btn {
     width: 100% !important;
     margin-bottom: 0.5rem !important;
-    margin-right: 0 !important;
-  }
-
-  /* Adjust project content padding */
-  #projects .project-card .card-text {
-    padding: 0 1rem !important;
-  }
-
-  /* News Section - Mobile Responsive */
-  #news ul {
-    padding-left: 1.2rem !important;
-  }
-
-  #news ul li {
-    margin-bottom: 0.8rem !important;
-    line-height: 1.6 !important;
   }
 }
 
-/* Mobile: Small phones (max-width: 576px) */
+/* Small phones only (max-width: 576px) */
 @media screen and (max-width: 576px) {
 
-  /* Publications - Extra small screens */
+  /* Smaller publication images on phones */
   #publications .stream-item .mr-3 {
     max-width: 150px !important;
   }
@@ -318,56 +275,19 @@
     max-width: 150px !important;
   }
 
+  /* Smaller title font on phones */
   #publications .article-title {
     font-size: 0.95rem !important;
-    line-height: 1.3 !important;
   }
 
-  /* Projects - Extra small screens */
+  /* Smaller project buttons */
   #projects .project-toolbar .btn {
     font-size: 0.9rem !important;
     padding: 0.5rem 1rem !important;
   }
 
-  /* Ensure images fit on small screens */
-  #projects img {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
-  /* Add side padding to prevent overflow */
-  #projects .container,
-  #publications .container {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  /* Reduce section heading size */
+  /* Reduce heading size */
   .section-heading h1 {
     font-size: 1.5rem !important;
-  }
-
-  /* Adjust overall container padding */
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-}
-
-/* Landscape mobile devices */
-@media screen and (max-width: 768px) and (orientation: landscape) {
-
-  /* Allow horizontal layout for publications in landscape */
-  #publications .stream-item {
-    flex-direction: row !important;
-  }
-
-  #publications .stream-item .mr-3 {
-    margin-right: 1rem !important;
-    margin-bottom: 0 !important;
-  }
-
-  #publications .media-body {
-    text-align: left !important;
   }
 }
