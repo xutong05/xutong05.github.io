@@ -9254,3 +9254,35 @@ html[dir="rtl"] body {
 .experience .card-body img {
   width: 100px !important;
   max-width: 100px; }
+
+/* Make only the H2X Lab logo smaller in Experience */
+.experience .card-body img[src*="H2X"],
+.experience .card-body img[alt*="H2X"] {
+  width: 70px !important;
+  max-width: 70px; }
+
+/* Make only the RobotiXX logo larger in Experience */
+.experience .card-body img[src*="RobotiXX"],
+.experience .card-body img[alt*="RobotiXX"] {
+  width: 110px !important;
+  /* matches the fixed logo column */
+  max-width: 110px; }
+
+/* Keep logo vertically centered and text start aligned */
+.experience .card-body .row.align-items-center {
+  align-items: center; }
+
+.experience .card-body .col-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* Fix logo column width on wider screens so text starts align */
+@media (min-width: 576px) {
+  .experience .card-body .col-auto {
+    width: 110px;
+    /* adjust to match your logo size */
+    min-width: 110px; }
+  /* Align text start when no logo provided */
+  .experience .card-body .row.align-items-center > .col:first-child {
+    margin-left: 110px; } }

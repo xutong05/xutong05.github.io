@@ -49,7 +49,7 @@ experience:
 
 - company: H2X Lab
   company_url: "https://eshed1.github.io/"
-  logo: "media/img/H2X.svg"
+  logo: "media/img/H2X.png"
   date_end: "2022-08-31"
   date_start: "2022-05-15"
   description: |-
