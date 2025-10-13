@@ -406,3 +406,51 @@
   line-height: inherit !important;
 }
 
+/* ============================================
+   EXPERIENCE SECTION FIXES
+   ============================================ */
+
+/* Normalize logo rendering to avoid baseline misalignment */
+.experience .card-body img {
+  height: auto !important;
+  display: block !important;
+}
+
+/* Ensure the logo cell centers content */
+.experience .card-body .row.align-items-center {
+  align-items: center !important;
+}
+.experience .card-body .col-auto {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Desktop/tablet: reserve consistent space so text lines align */
+@media (min-width: 576px) {
+  .experience .card-body .col-auto {
+    width: 110px !important;
+    min-width: 110px !important;
+    flex: 0 0 110px !important;
+  }
+}
+
+/* Mobile-specific alignment: keep logo and text aligned */
+@media (max-width: 575.98px) {
+  .experience .card-body .row.align-items-center {
+    align-items: center !important;
+    flex-wrap: nowrap !important; /* prevent wrapping that breaks alignment */
+  }
+  .experience .card-body .col-auto {
+    width: 90px !important;  /* match template default */
+    min-width: 90px !important;
+    flex: 0 0 90px !important;
+  }
+  .experience .card-body img {
+    width: 90px !important;
+    max-width: 90px !important;
+  }
+  .experience .card-body .col {
+    min-width: 0 !important; /* allow text to shrink without overflow */
+  }
+}

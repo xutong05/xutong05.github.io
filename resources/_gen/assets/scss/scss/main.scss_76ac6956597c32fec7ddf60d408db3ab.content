@@ -9253,7 +9253,10 @@ html[dir="rtl"] body {
 /* Make experience section logos larger */
 .experience .card-body img {
   width: 100px !important;
-  max-width: 100px; }
+  max-width: 100px;
+  height: auto;
+  display: block;
+  /* prevent baseline gap shifting alignment */ }
 
 /* Make only the H2X Lab logo smaller in Experience */
 .experience .card-body img[src*="H2X"],
@@ -9286,3 +9289,22 @@ html[dir="rtl"] body {
   /* Align text start when no logo provided */
   .experience .card-body .row.align-items-center > .col:first-child {
     margin-left: 110px; } }
+
+/* Tighten alignment on small screens (mobile) */
+@media (max-width: 575.98px) {
+  /* Keep logo and text on one line and centered */
+  .experience .card-body .row.align-items-center {
+    align-items: center;
+    flex-wrap: nowrap; }
+  /* Reserve consistent space for the logo to avoid wrapping */
+  .experience .card-body .col-auto {
+    width: 90px;
+    min-width: 90px;
+    flex: 0 0 90px; }
+  /* Normalize logo size for mobile */
+  .experience .card-body img {
+    width: 90px !important;
+    max-width: 90px; }
+  /* Ensure text column can shrink without overflow */
+  .experience .card-body .col {
+    min-width: 0; } }
