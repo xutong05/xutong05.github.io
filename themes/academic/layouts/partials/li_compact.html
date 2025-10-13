@@ -78,9 +78,10 @@
   <div class="ml-3">
     {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
     {{ with $resource }}
-    {{ $image := .Resize "500x250" }}
+    {{/* Preserve aspect ratio, avoid cropping/distortion, and keep GIFs animated. */}}
+    {{ $image := .Fit "300x" }}
     <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}">
+      <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}" class="img-fluid">
     </a>
     {{end}}
   </div>

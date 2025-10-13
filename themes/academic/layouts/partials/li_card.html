@@ -43,10 +43,18 @@
   {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
   {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
   {{ with $resource }}
-  {{ $image := .Fill (printf "918x517 q90 %s" $anchor) }}
-  <a href="{{ $item.RelPermalink }}">
-      <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ $item.Title }}">
-  </a>
+    {{ if eq .MediaType.SubType "gif" }}
+      {{/* Keep full GIF visible and animated. Avoid cropping. */}}
+      {{ $image := .Fit "918x" }}
+      <a href="{{ $item.RelPermalink }}">
+          <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ $item.Title }}">
+      </a>
+    {{ else }}
+      {{ $image := .Fill (printf "918x517 q90 %s" $anchor) }}
+      <a href="{{ $item.RelPermalink }}">
+          <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ $item.Title }}">
+      </a>
+    {{ end }}
   {{end}}
 
   <h3 class="article-title mb-1 mt-3">

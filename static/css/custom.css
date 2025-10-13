@@ -259,17 +259,25 @@
     max-width: 200px !important;
     width: auto !important;
   }
-  /* Mobile: constrain GIF height further to match layout */
+  /* Mobile: constrain GIF width and show full image */
   #publications .stream-item .mr-3 img[src$=".gif"] {
     width: 200px !important;   /* mobile match */
-    height: 100px !important;  /* 2:1 like 200x100 */
-    object-fit: cover !important;
+    height: auto !important;   /* preserve aspect ratio */
+    object-fit: contain !important;
     object-position: center center !important;
   }
 
   #publications .stream-item .ml-3 img {
     max-width: 200px !important;
     width: auto !important;
+  }
+
+  /* Mobile: constrain GIF width in compact view and show full image */
+  #publications .stream-item .ml-3 img[src$=".gif"] {
+    width: 200px !important;   /* mobile match */
+    height: auto !important;   /* preserve aspect ratio */
+    object-fit: contain !important;
+    object-position: center center !important;
   }
 
   /* Center publication content */
