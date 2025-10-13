@@ -48,6 +48,7 @@
 #publications .stream-item .mr-3 {
   max-width: 250px !important;
   flex-shrink: 0 !important;
+  overflow: hidden !important; /* keep media fully inside the view */
 }
 
 #publications .stream-item .mr-3 img {
@@ -243,6 +244,7 @@
     margin-right: 0 !important;
     margin-bottom: 1rem !important;
     text-align: center !important;
+    overflow: hidden !important; /* avoid overflow on small screens */
   }
 
   /* Also handle left-margin image container variant */
@@ -256,6 +258,13 @@
   #publications .stream-item .mr-3 img {
     max-width: 200px !important;
     width: auto !important;
+  }
+  /* Mobile: constrain GIF height further to match layout */
+  #publications .stream-item .mr-3 img[src$=".gif"] {
+    width: 200px !important;   /* mobile match */
+    height: 100px !important;  /* 2:1 like 200x100 */
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 
   #publications .stream-item .ml-3 img {
@@ -381,3 +390,11 @@
   }
 
 }
+
+/* Ensure publication titles match styling for anchors too */
+#publications .article-title a {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
