@@ -40,11 +40,11 @@ publishDate: ''
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: 'under review'
-publication_short: ''
+publication: 'IEEE Robotics & Automation Magazine (**RAM**), 2025'
+publication_short: 'RAM 2025'
 
 abstract: "The forth Benchmark Autonomous Robot Navigation (BARN) Challenge took place at the 2025 IEEE International Conference on Robotics and Automation (ICRA 2025) in Atlanta, GA, USA and continued to evaluate the performance of state-of-the-art autonomous ground navigation systems in highly constrained environments. It is the first time The BARN Challenge came back to North American since the first challenge in Philadelphia, after going around the world to London (Europe) and Yokohama (Asia). Nine teams participated in the simulation competition, eight of which were invited to the physical competition, while four of them finally attended in Atlanta. A few changes were adopted for the first time, such as introducing dynamic obstacles and adjusting the system tuning rules, to encourage more robust navigation performance. In this article, we discuss the challenge, the approaches used by the three winning teams, and lessons learned to direct future research and competitions."
 
