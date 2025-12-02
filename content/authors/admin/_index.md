@@ -81,7 +81,7 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am a third-year PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
+I am a PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
 
 My primary research interests include robotics, reinforcement learning and foundation models. My current work on fast adaptation for cross-embediments reflects my dedication to advance real-world general-purpose applications in robotics through large-scale machine learning techniques.
 
