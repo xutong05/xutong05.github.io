@@ -26,18 +26,18 @@ date_format: Jan 2006
 #   You can begin a multiline `description` using YAML's `|-`.
 experience:
 - company: RobotiXX
-  company_url: "https://cs.gmu.edu/~xiao/RobotiXX/lab.html"
+  company_url: "https://robotixx.cs.gmu.edu/"
   logo: "media/img/RobotiXX_gmu.gif"
   date_end: ""
   date_start: "2024-05-25"
   description: |-
     * Research in off-road navigation, deep reinforcement learning, humaniods, foundation models
-    * Leading the <a href="https://cs.gmu.edu/~xiao/Research/Verti-Bench/" target="_blank">Verti-Bench</a> for fast adaptation cross different types of vehicles in off-road navigation scenario
+    * Leading the <a href="https://people.cs.gmu.edu/~xiao/Research/Verti-Bench/" target="_blank">Verti-Bench</a> for fast adaptation cross different types of vehicles in off-road navigation scenario
   location: Fairfax
   title: Graduate Research Assistant
 
 - company: George Mason University
-  company_url: "https://cs.gmu.edu/"
+  company_url: "https://www.gmu.edu/"
   logo: "media/img/GMU.png"
   date_end: "2025-05-25"
   date_start: "2023-08-15"

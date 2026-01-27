@@ -15,9 +15,9 @@ role: PhD student for Robotics
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: George Mason University
-    url: https://cs.gmu.edu/
+    url: https://www.gmu.edu/
   - name: RobotiXX Lab
-    url: "https://cs.gmu.edu/~xiao/RobotiXX/lab.html"
+    url: "https://robotixx.cs.gmu.edu/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include robotics, motion planning, reinforcement learning, and foundation models.
@@ -65,7 +65,7 @@ social:
 
   - icon: cv
     icon_pack: ai
-    link: files/TongXu_CV_OCT25.pdf
+    link: files/TongXu_CV_Jan26.pdf
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -81,7 +81,7 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am a PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
+I am a PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
 
 My primary research interests include robotics, reinforcement learning and foundation models. My current work on fast adaptation for cross-embediments reflects my dedication to advance real-world general-purpose applications in robotics through large-scale machine learning techniques.
 

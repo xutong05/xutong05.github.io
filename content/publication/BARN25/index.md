@@ -61,11 +61,11 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://cs.gmu.edu/~xiao/papers/barn25_report.pdf'
+url_pdf: 'https://people.cs.gmu.edu/~xiao/papers/barn25_report.pdf'
 url_code: ''
-url_dataset: 'https://cs.gmu.edu/~xiao/Research/BARN/BARN.html'
+url_dataset: 'https://people.cs.gmu.edu/~xiao/Research/BARN/BARN.html'
 url_poster: ''
-url_project: 'https://cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge25.html'
+url_project: 'https://people.cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge25.html'
 url_slides: ''
 url_source: ''
 url_video: ''
