@@ -33,29 +33,63 @@
 
               const listItems = contentDiv.querySelectorAll('ul li');
               let isExpanded = false;
+              let collapsedHeight = 0;
+              let expandedHeight = 0;
 
-              function updateDisplay() {
-                listItems.forEach((item, index) => {
-                  if (index >= limit) {
-                    item.style.display = isExpanded ? 'list-item' : 'none';
-                  }
-                });
+              toggleBtn.setAttribute('aria-controls', contentDiv.id);
+
+              function measureHeights() {
+                expandedHeight = contentDiv.scrollHeight;
 
                 if (listItems.length <= limit) {
+                  collapsedHeight = expandedHeight;
+                  return;
+                }
+
+                const lastVisible = listItems[Math.min(limit, listItems.length) - 1];
+                if (!lastVisible) {
+                  collapsedHeight = expandedHeight;
+                  return;
+                }
+
+                const containerRect = contentDiv.getBoundingClientRect();
+                const lastRect = lastVisible.getBoundingClientRect();
+                const style = window.getComputedStyle(lastVisible);
+                const marginBottom = parseFloat(style.marginBottom) || 0;
+                collapsedHeight = (lastRect.bottom - containerRect.top) + marginBottom;
+              }
+
+              function updateDisplay() {
+                if (listItems.length <= limit) {
                   toggleBtn.style.display = 'none';
+                  contentDiv.style.maxHeight = `${expandedHeight}px`;
                 } else {
                   toggleBtn.innerHTML = isExpanded
                     ? 'Show Less <i class="fas fa-chevron-up"></i>'
                     : 'Show More <i class="fas fa-chevron-down"></i>';
+                  contentDiv.style.maxHeight = `${isExpanded ? expandedHeight : collapsedHeight}px`;
                 }
+
+                toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+                contentDiv.classList.toggle('is-expanded', isExpanded);
               }
 
               toggleBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 isExpanded = !isExpanded;
+                measureHeights();
                 updateDisplay();
               });
 
+              function handleResize() {
+                measureHeights();
+                updateDisplay();
+              }
+
+              window.addEventListener('resize', handleResize);
+              window.addEventListener('load', handleResize);
+
+              measureHeights();
               updateDisplay();
             }
 
@@ -97,29 +131,63 @@
 
               const listItems = contentDiv.querySelectorAll('ul li');
               let isExpanded = false;
+              let collapsedHeight = 0;
+              let expandedHeight = 0;
 
-              function updateDisplay() {
-                listItems.forEach((item, index) => {
-                  if (index >= limit) {
-                    item.style.display = isExpanded ? 'list-item' : 'none';
-                  }
-                });
+              toggleBtn.setAttribute('aria-controls', contentDiv.id);
+
+              function measureHeights() {
+                expandedHeight = contentDiv.scrollHeight;
 
                 if (listItems.length <= limit) {
+                  collapsedHeight = expandedHeight;
+                  return;
+                }
+
+                const lastVisible = listItems[Math.min(limit, listItems.length) - 1];
+                if (!lastVisible) {
+                  collapsedHeight = expandedHeight;
+                  return;
+                }
+
+                const containerRect = contentDiv.getBoundingClientRect();
+                const lastRect = lastVisible.getBoundingClientRect();
+                const style = window.getComputedStyle(lastVisible);
+                const marginBottom = parseFloat(style.marginBottom) || 0;
+                collapsedHeight = (lastRect.bottom - containerRect.top) + marginBottom;
+              }
+
+              function updateDisplay() {
+                if (listItems.length <= limit) {
                   toggleBtn.style.display = 'none';
+                  contentDiv.style.maxHeight = `${expandedHeight}px`;
                 } else {
                   toggleBtn.innerHTML = isExpanded
                     ? '<i class="fas fa-chevron-up"></i> Show Less'
                     : '<i class="fas fa-chevron-down"></i> Show More';
+                  contentDiv.style.maxHeight = `${isExpanded ? expandedHeight : collapsedHeight}px`;
                 }
+
+                toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+                contentDiv.classList.toggle('is-expanded', isExpanded);
               }
 
               toggleBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 isExpanded = !isExpanded;
+                measureHeights();
                 updateDisplay();
               });
 
+              function handleResize() {
+                measureHeights();
+                updateDisplay();
+              }
+
+              window.addEventListener('resize', handleResize);
+              window.addEventListener('load', handleResize);
+
+              measureHeights();
               updateDisplay();
             }
 

@@ -1,6 +1,22 @@
-/* Limit news items to show only first 6 */
-#news ul li:nth-child(n+7) {
-  display: none;
+/* Smooth expand/collapse for news list */
+#news .collapsible-content {
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+  will-change: max-height;
+}
+
+#news .collapsible-content ul {
+  margin-bottom: 0.4rem;
+}
+
+#news .collapsible-content.is-expanded + .mt-3 {
+  margin-top: 0.5rem !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #news .collapsible-content {
+    transition: none;
+  }
 }
 
 /* Match news text size with regular body text */
