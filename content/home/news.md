@@ -49,7 +49,7 @@ design:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
-
+- **JAN 2026:** {{< icon name="pencil-alt" pack="fas" >}}[ADP](https://people.cs.gmu.edu/~xiao/papers/adp.pdf) has been accepted to **IEEE ICRA 2026**.
 - **OCT 2025:** {{< icon name="pencil-alt" pack="fas" >}} Our [report](https://people.cs.gmu.edu/~xiao/papers/barn25_report.pdf) on The 4th BARN Challenge at ICRA 2025 has been accepted to **IEEE RAM 2025**. 
 - **OCT 2025:** {{< icon name="pencil-alt" pack="fas" >}}[CARoL](https://arxiv.org/abs/2506.07006) has been accepted to **IEEE RA-L 2025**.
 - **SEP 2025:** {{< icon name="pencil-alt" pack="fas" >}}[Verti-Arena](https://www.youtube.com/watch?v=3La89A29Uuc) has been accepted to **IEEE SSRR 2025**.
