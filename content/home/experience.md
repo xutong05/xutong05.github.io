@@ -31,8 +31,8 @@ experience:
   date_end: ""
   date_start: "2024-05-25"
   description: |-
-    * Research in off-road navigation, deep reinforcement learning, humaniods, foundation models
-    * Leading the <a href="https://people.cs.gmu.edu/~xiao/Research/Verti-Bench/" target="_blank">Verti-Bench</a> for fast adaptation cross different types of vehicles in off-road navigation scenario
+    * Research in off-road navigation, reinforcement learning, and foundation models
+    * Leading the <a href="https://people.cs.gmu.edu/~xiao/Research/Verti-Bench/" target="_blank">Verti-Bench</a> for rapid kinodynamics adaptation cross different types of vehicles in off-road navigation scenario
   location: Fairfax
   title: Graduate Research Assistant
 
