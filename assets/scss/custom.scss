@@ -105,3 +105,31 @@
     min-width: 0;
   }
 }
+
+/* Keep Verti-Arena award link and hover underline in the same red color. */
+a[data-award-modal="true"],
+a[data-award-modal="true"]:hover {
+  color: #ff0000 !important;
+  text-decoration-color: #ff0000 !important;
+}
+
+/* Reserve scrollbar space to prevent navbar/header shift when modal opens. */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Reduce space between publication info (with award) and URL buttons in list view */
+.media-body .stream-meta.article-metadata {
+  margin-bottom: 0.4rem !important;
+}
+
+.media-body .btn-links {
+  margin-top: 0.2rem !important;
+}
+
+/* Tighten the inner article-metadata that contains the publication/award */
+.stream-meta .article-metadata {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+

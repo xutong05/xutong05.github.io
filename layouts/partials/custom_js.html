@@ -1,0 +1,118 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[data-award-modal="true"]');
+  if (!links.length) return;
+  let previousBodyOverflow = "";
+
+  const lockScroll = function () {
+    previousBodyOverflow = document.body.style.overflow || "";
+    document.body.style.overflow = "hidden";
+  };
+
+  const unlockScroll = function () {
+    document.body.style.overflow = previousBodyOverflow;
+  };
+
+  let modal = document.getElementById("award-image-modal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "award-image-modal";
+    modal.style.cssText = `
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), background 0.42s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.42s;
+    `;
+
+    const img = document.createElement("img");
+    img.id = "award-image-modal-img";
+    img.alt = "Award image";
+    img.style.cssText = `
+      max-width: min(92vw, 1100px);
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+      border-radius: 6px;
+      transform: translateY(10px) scale(0.92);
+      opacity: 0;
+      transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+    `;
+
+    const closeBtn = document.createElement("button");
+    closeBtn.type = "button";
+    closeBtn.setAttribute("aria-label", "Close");
+    closeBtn.textContent = "\u00D7";
+    closeBtn.style.cssText = `
+      position: fixed;
+      top: 14px;
+      right: 18px;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      color: #222;
+      font-size: 30px;
+      line-height: 36px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    `;
+
+    const openModal = function () {
+      modal.style.visibility = "visible";
+      modal.style.opacity = "1";
+      modal.style.background = "rgba(0,0,0,0.78)";
+      img.style.transform = "translateY(0) scale(1)";
+      img.style.opacity = "1";
+      closeBtn.style.opacity = "1";
+      lockScroll();
+    };
+
+    const closeModal = function () {
+      modal.style.opacity = "0";
+      modal.style.background = "rgba(0,0,0,0)";
+      img.style.transform = "translateY(10px) scale(0.92)";
+      img.style.opacity = "0";
+      closeBtn.style.opacity = "0";
+      unlockScroll();
+      setTimeout(function () {
+        modal.style.visibility = "hidden";
+      }, 420);
+    };
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && modal.style.visibility === "visible") closeModal();
+    });
+
+    modal.appendChild(img);
+    modal.appendChild(closeBtn);
+    document.body.appendChild(modal);
+
+    modal.openModal = openModal;
+  }
+
+  const modalImg = document.getElementById("award-image-modal-img");
+
+  links.forEach(function (link) {
+    link.style.cursor = "pointer";
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      modalImg.src = link.getAttribute("href");
+      modal.openModal();
+    });
+  });
+});
+</script>

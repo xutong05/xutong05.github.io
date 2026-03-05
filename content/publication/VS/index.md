@@ -29,7 +29,10 @@ publishDate: ''
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2025 <span style="color: red;">✨Oral Presentation✨</span>'
+publication: |
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2025
+  <br>
+  <span style="color: red;">&#10024;Oral Presentation&#10024;</span>
 publication_short: 'IROS 2025'
 
 abstract: Reinforcement Learning (RL) has the potential to enable extreme off-road mobility by circumventing complex kinodynamic modeling, planning, and control by simulated end-to-end trial-and-error learning experiences. However, most RL methods are sample-inefficient when training in a large amount of manually designed simulation environments and struggle at generalizing to the real world. To address these issues, we introduce Verti-Selector (VS), an automatic curriculum learning framework designed to enhance learning efficiency and generalization by selectively sampling training terrain. VS prioritizes vertically challenging terrain with higher Temporal Difference (TD) errors when revisited, thereby allowing robots to learn at the edge of their evolving capabilities. By dynamically adjusting the sampling focus, VS significantly boosts sample efficiency and generalization within the VW-Chrono simulator built on the Chrono multi-physics engine. Furthermore, we provide simulation and physical results using VS on a Verti-4-Wheeler platform. These results demonstrate that VS can achieve 23.08% improvement in terms of success rate by efficiently sampling during training and robustly generalizing to the real world.

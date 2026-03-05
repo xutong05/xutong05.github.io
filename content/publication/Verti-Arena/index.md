@@ -35,7 +35,12 @@ publishDate: ''
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'IEEE International Symposium on Safety Security Rescue Robotics (**SSRR**), 2025'
+publication: |
+  IEEE International Symposium on Safety Security Rescue Robotics (**SSRR**), 2025
+  <br>
+  <a data-award-modal="true" href="/media/awards/verti_arena_award.jpg" style="display:inline-block;cursor:pointer;">
+    <span style="color:red;">&#10024;Best Student Presenter Award&#10024;</span>
+  </a>
 publication_short: 'SSRR 2025'
 
 abstract: "Off-road navigation is an important capability for mobile robots deployed in environments that are inaccessible or dangerous to humans, such as disaster response or planetary exploration. Progress is limited due to the lack of a controllable and standardized real-world testbed for systematic data collection and validation. To fill this gap, we introduce Verti-Arena, a reconfigurable indoor facility designed specifically for off-road autonomy. By providing a repeatable benchmark environment, Verti-Arena supports reproducible experiments across a variety of vertically challenging terrains and provides precise ground truth measurements through onboard sensors and a motion capture system. Verti-Arena also supports consistent data collection and comparative evaluation of algorithms in off-road autonomy research. We also develop a web-based interface that enables research groups worldwide to remotely conduct standardized off-road autonomy experiments on Verti-Arena."
@@ -83,3 +88,5 @@ image:
 #   Otherwise, set `slides: ""`.
 # slides: ''
 ---
+
+
