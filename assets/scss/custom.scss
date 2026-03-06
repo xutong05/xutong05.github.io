@@ -118,6 +118,13 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* Bootstrap adds padding-right to body when a modal opens to compensate for
+   the hidden scrollbar, but scrollbar-gutter: stable already reserves that
+   space on html — cancel the redundant shift. */
+body.modal-open {
+  padding-right: 0 !important;
+}
+
 /* Reduce space between publication info (with award) and URL buttons in list view */
 .media-body .stream-meta.article-metadata {
   margin-bottom: 0.4rem !important;

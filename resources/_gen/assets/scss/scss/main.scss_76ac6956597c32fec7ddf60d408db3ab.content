@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Set Bootstrap variables */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -9330,6 +9331,12 @@ a[data-award-modal="true"]:hover {
 /* Reserve scrollbar space to prevent navbar/header shift when modal opens. */
 html {
   scrollbar-gutter: stable; }
+
+/* Bootstrap adds padding-right to body when a modal opens to compensate for
+   the hidden scrollbar, but scrollbar-gutter: stable already reserves that
+   space on html — cancel the redundant shift. */
+body.modal-open {
+  padding-right: 0 !important; }
 
 /* Reduce space between publication info (with award) and URL buttons in list view */
 .media-body .stream-meta.article-metadata {
