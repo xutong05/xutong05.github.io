@@ -50,7 +50,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://people.cs.gmu.edu/~xiao/papers/adp.pdf'
+url_pdf: 'https://arxiv.org/abs/2510.05330'
 url_code: ''
 url_dataset: ''
 url_poster: ''
