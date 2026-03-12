@@ -32,7 +32,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Computer Science
+    - course: Ph.D. in Computer Science
       institution: George Mason University
       year: 2023
     - course: M.S. in Computer Science
