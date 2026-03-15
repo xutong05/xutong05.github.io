@@ -24,6 +24,10 @@ defaults:
   run:
     shell: bash
 
+# Opt in JavaScript actions to Node.js 24 ahead of the June 2, 2026 default switch
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   # Build job
   build:
@@ -70,4 +74,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
