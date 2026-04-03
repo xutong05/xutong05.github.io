@@ -61,3 +61,7 @@ Thumbs.db
 # Lock files
 package-lock.json
 yarn.lock
+
+# CV files
+static/files/TongXu_CV_Feb.pdf
+static/files/TongXu_CV_Mar.pdf
