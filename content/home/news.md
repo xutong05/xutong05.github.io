@@ -49,6 +49,7 @@ design:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
+- **MAY 2026:** {{< icon name="award" pack="fas" >}}Received [Doctoral Research Scholarship - Tier 1](https://graduate.gmu.edu/financial-support/grants-fellowships-and-awards/internal-funding-resources/doctoral-research). Thanks, GMU!
 - **MAR 2026:** {{< icon name="user-graduate" pack="fas" >}}Passed my PhD Comprehensive Exam!
 - **JAN 2026:** {{< icon name="pencil-alt" pack="fas" >}}[ADP](https://arxiv.org/abs/2510.05330) has been accepted to **IEEE ICRA 2026**.
 - **OCT 2025:** {{< icon name="pencil-alt" pack="fas" >}}Our [report](https://people.cs.gmu.edu/~xiao/papers/barn25_report.pdf) on The 4th BARN Challenge at ICRA 2025 has been accepted to **IEEE RAM 2025**. 
