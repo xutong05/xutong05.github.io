@@ -50,7 +50,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2409.17469'
+url_pdf: 'https://ieeexplore.ieee.org/document/11246235'
 url_code: 'https://github.com/RobotiXX/VertiSelector'
 url_dataset: ''
 url_poster: ''

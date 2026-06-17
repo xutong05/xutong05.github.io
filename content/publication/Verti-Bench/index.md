@@ -54,7 +54,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2502.11426'
+url_pdf: 'https://www.roboticsproceedings.org/rss21/p138.html'
 url_code: 'https://github.com/RobotiXX/verti_bench'
 url_dataset: 'https://dataverse.orc.gmu.edu/dataset.xhtml?persistentId=doi:10.13021/ORC2020/TIDSD3'
 url_poster: ''

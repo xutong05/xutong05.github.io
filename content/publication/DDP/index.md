@@ -49,7 +49,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2503.20521'
+url_pdf: 'https://ieeexplore.ieee.org/document/11246580'
 url_code: 'https://github.com/yuanjielu-64/barn_challenge_lu'
 url_dataset: ''
 url_poster: ''
