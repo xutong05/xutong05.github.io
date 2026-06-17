@@ -94,27 +94,10 @@
       {{/* Group publications by type */}}
       {{ $pub_types := partial "functions/get_pub_types" $ }}
 
-      {{/* Preprint (type 3) */}}
-      {{ $preprints := where $query "Params.publication_types" "intersect" (slice "3") }}
-      {{ if $preprints }}
-        <h2 style="margin-top: 0.3em; margin-bottom: 0.6em;">Preprint</h2>
-        {{ range $post := $preprints }}
-          {{ if eq $st.Params.design.view 1 }}
-            {{ partial "li_list" . }}
-          {{ else if eq $st.Params.design.view 3 }}
-            {{ partial "li_card" . }}
-          {{ else if eq $st.Params.design.view 4 }}
-            {{ partial "li_citation" . }}
-          {{ else }}
-            {{ partial "li_compact" . }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-
       {{/* Journal (type 2) */}}
       {{ $journals := where $query "Params.publication_types" "intersect" (slice "2") }}
       {{ if $journals }}
-        <h2 style="margin-top: 0.8em; margin-bottom: 0.6em;">Journal</h2>
+        <h2 style="margin-top: 0.3em; margin-bottom: 0.6em;">Journal</h2>
         {{ range $post := $journals }}
           {{ if eq $st.Params.design.view 1 }}
             {{ partial "li_list" . }}
@@ -133,6 +116,23 @@
       {{ if $conferences }}
         <h2 style="margin-top: 0.8em; margin-bottom: 0.6em;">Conference</h2>
         {{ range $post := $conferences }}
+          {{ if eq $st.Params.design.view 1 }}
+            {{ partial "li_list" . }}
+          {{ else if eq $st.Params.design.view 3 }}
+            {{ partial "li_card" . }}
+          {{ else if eq $st.Params.design.view 4 }}
+            {{ partial "li_citation" . }}
+          {{ else }}
+            {{ partial "li_compact" . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{/* Preprint (type 3) */}}
+      {{ $preprints := where $query "Params.publication_types" "intersect" (slice "3") }}
+      {{ if $preprints }}
+        <h2 style="margin-top: 0.8em; margin-bottom: 0.6em;">Preprint</h2>
+        {{ range $post := $preprints }}
           {{ if eq $st.Params.design.view 1 }}
             {{ partial "li_list" . }}
           {{ else if eq $st.Params.design.view 3 }}

@@ -18,7 +18,7 @@ authors:
   # - 'Equal contribution'
   # - 'Equal contribution'
 
-date: '2025-09-14'
+date: '2025-09-16'
 doi: ''
 
 # draft: true
@@ -30,11 +30,12 @@ publishDate: ''
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['3']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'under review'
-publication_short: ''
+publication: |
+  IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2026
+publication_short: 'IROS 2026'
 
 abstract: "Most traversability estimation techniques divide off-road terrain into traversable (e.g., pavement, gravel, and grass) and non-traversable (e.g., boulders, vegetation, and ditches) regions and then inform subsequent planners to produce trajectories on the traversable part. However, recent research demonstrated that wheeled robots can traverse vertically challenging terrain (e.g., extremely rugged boulders comparable in size to the vehicles themselves), which unfortunately would be deemed as non-traversable by existing techniques. Motivated by such limitations, this work aims at identifying the traversable from the seemingly non-traversable, vertically challenging terrain based on past kinodynamic vehicle-terrain interactions in a data-driven manner. Our new Traverse the Non-Traversable (TNT) traversability estimator can efficiently guide a downstream sampling-based planner containing a high-precision 6-DoF kinodynamic model, which becomes deployable onboard a small-scale vehicle. Additionally, the estimated traversability can also be used as a costmap to plan global and local paths without sampling. Our experiment results show that TNT can improve planning performance, efficiency, and stability by 50%, 26.7%, and 9.2% respectively compared with a state-of-the-art off-road navigation method on a physical robot platform."
 
