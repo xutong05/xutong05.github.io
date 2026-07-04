@@ -81,7 +81,6 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am a PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I received my Master's degree from University of Southern California and Bachelor's degree from Nanjing University of Information Science & Technology. 
+I am  currently a senior PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I received my master's degree from University of Southern California and bachelor's degree from Nanjing University of Information Science & Technology. 
 
-My primary research interests include robotics, reinforcement learning and foundation models. My current work on rapid kinodynamics adaptation across heterogeneous autonomous robot fleets reflects my dedication to advance real-world, general-purpose robotics through machine learning.
-
+My primary research interests include motion planning, reinforcement learning, and whole-body loco-manipulation. My current work focuses on kinodynamics adaptation across heterogeneous autonomous robot fleets and humanoid robot learning.
