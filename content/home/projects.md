@@ -32,6 +32,10 @@ subtitle = ""
   [[content.filter_button]]
     name = "Visual Odometry"
     tag = "Visual Odometry"
+
+  [[content.filter_button]]
+    name = "Application"
+    tag = "Application"
   
 
 [design]

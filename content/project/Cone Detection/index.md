@@ -14,20 +14,20 @@ image:
   focal_point: Smart
 
 links:
-  - icon: github
-    icon_pack: fab
-    name: Code
-    url: https://colab.research.google.com/drive/1YSquCnEYDlBfGWvB9OvHy9PzcDA8KBO9
-
   - icon: file-powerpoint
     icon_pack: fas
     name: Presentation
     url: https://docs.google.com/presentation/d/1AtpbUdro1p_mXU4tbVF0Di6cSytEf8FQzjB4LBi5miY/edit#slide=id.p
-
+  
   - icon: file-alt
     icon_pack: fas
     name: Report
     url: https://docs.google.com/document/d/1q-gPWjPwW611z6CmJs1C_BVIUV05ySgwJCaNVJ8OxhI/edit#
+
+  - icon: github
+    icon_pack: fab
+    name: Code
+    url: https://colab.research.google.com/drive/1YSquCnEYDlBfGWvB9OvHy9PzcDA8KBO9
     
 url_code: ''
 url_pdf: ''

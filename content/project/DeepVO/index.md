@@ -14,15 +14,15 @@ image:
   focal_point: Smart
 
 links:
-  - icon: github
-    icon_pack: fab
-    name: Code
-    url: https://github.com/VincentAC-stack/DeepVO-pytorch
-
   - icon: file-powerpoint
     icon_pack: fas
     name: Presentation
     url: https://docs.google.com/presentation/d/1wUyDvbkg9jXYazCB2ZAxZ7YUK9FCccZy/edit?usp=sharing&ouid=112514172982460613696&rtpof=true&sd=true
+    
+  - icon: github
+    icon_pack: fab
+    name: Code
+    url: https://github.com/VincentAC-stack/DeepVO-pytorch
     
 url_code: ''
 url_pdf: ''
