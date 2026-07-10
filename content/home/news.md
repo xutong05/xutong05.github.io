@@ -49,6 +49,7 @@ design:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
+- **JUL 2026:** {{< icon name="award" pack="fas" >}}Awarded [IROS RAS Travel Grant](https://2026.ieee-iros.org/attend/ras-member-support/) to attend **IROS 2026**!
 - **JUN 2026:** {{< icon name="pencil-alt" pack="fas" >}}[VertiAdaptor](https://arxiv.org/abs/2603.06887) and [TNT](https://people.cs.gmu.edu/~xiao/papers/tnt.pdf) have been accepted to **IEEE IROS 2026**.
 - **MAY 2026:** {{< icon name="award" pack="fas" >}}Received [Doctoral Research Scholarship - Tier 1](https://graduate.gmu.edu/financial-support/grants-fellowships-and-awards/internal-funding-resources/doctoral-research). Thanks, GMU!
 - **MAR 2026:** {{< icon name="user-graduate" pack="fas" >}}Passed my PhD Comprehensive Exam!
@@ -56,7 +57,7 @@ design:
 - **OCT 2025:** {{< icon name="pencil-alt" pack="fas" >}}Our [report](https://people.cs.gmu.edu/~xiao/papers/barn25_report.pdf) on The 4th BARN Challenge at ICRA 2025 has been accepted to **IEEE RAM 2025**. 
 - **OCT 2025:** {{< icon name="pencil-alt" pack="fas" >}}[CARoL](https://ieeexplore.ieee.org/document/11197900) has been accepted to **IEEE RA-L 2025**.
 - **SEP 2025:** {{< icon name="pencil-alt" pack="fas" >}}[Verti-Arena](https://www.youtube.com/watch?v=3La89A29Uuc) has been accepted to **IEEE SSRR 2025**.
-- **AUG 2025:** {{< icon name="award" pack="fas" >}}Awarded [IROS-SDC Travel Grant](https://www.iros25.org/TravelGrants) to attend **IROS 2025**!
+- **AUG 2025:** {{< icon name="award" pack="fas" >}}Awarded [IROS-SDC Travel Award](https://www.iros25.org/TravelGrants) to attend **IROS 2025**!
 - **JUL 2025:** {{< icon name="microphone-alt" pack="fas" >}}Gave a spotlight talk at the [RSS 2025](https://roboticsconference.org/2025/).
 - **JUN 2025:** {{< icon name="pencil-alt" pack="fas" >}}[VertiSelector](https://ieeexplore.ieee.org/document/11246235), [RTW](https://ieeexplore.ieee.org/document/11247039), and [DDP](https://ieeexplore.ieee.org/document/11246580) have been accepted to **IEEE IROS 2025**.
 - **MAY 2025:** {{< icon name="trophy" pack="fas" >}}Got 2nd Place in the [BARN Challenge Competition](https://people.cs.gmu.edu/~xiao/Research/BARN_Challenge/BARN_Challenge25.html) at **ICRA 2025**!
