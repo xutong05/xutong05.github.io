@@ -1,4 +1,21 @@
 <script>
+// Fix Bootstrap Scrollspy highlighting the wrong nav item by adding a small extra offset.
+$(document).ready(function () {
+  function fixScrollspyOffset() {
+    let $body = $('body');
+    let data = $body.data('bs.scrollspy');
+    if (data) {
+      data._config.offset = $('#navbar-main').outerHeight() + 2;
+      $body.data('bs.scrollspy', data);
+      $body.scrollspy('refresh');
+    }
+  }
+  setTimeout(fixScrollspyOffset, 500);
+  $(window).resize(function () { setTimeout(fixScrollspyOffset, 200); });
+});
+</script>
+
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll('a[data-award-modal="true"]');
   if (!links.length) return;
