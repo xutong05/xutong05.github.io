@@ -6,7 +6,7 @@ title: 'Traverse the Non-Traversable: Estimating Traversability for Wheeled Mobi
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - C. Pan
-  - C. Pan
+  - A. Datar
   - A. Pokhrel
   - M. Choulas
   - M. Nazeri
