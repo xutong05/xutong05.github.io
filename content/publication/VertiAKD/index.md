@@ -17,7 +17,7 @@ authors:
 #   - ''
 #   - ''
 
-date: '2026-08-2'
+date: '2026-08-02'
 doi: ''
 
 # draft: true
