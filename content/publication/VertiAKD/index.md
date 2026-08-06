@@ -10,12 +10,12 @@ authors:
   - F. Cancelliere
   - and X. Xiao
 
-# Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - ''
-  - ''
-  - ''
+# # Author notes (optional)
+# author_notes:
+#   - ''
+#   - ''
+#   - ''
+#   - ''
 
 date: '2026-08-2'
 doi: ''
