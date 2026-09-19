@@ -20,14 +20,14 @@ organizations:
     url: "https://robotixx.cs.gmu.edu/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include robotics, motion planning, reinforcement learning, and foundation models.
+bio: My research interests include motion planning, robot learning, world models, and embodied intelligence.
 
 # Interests to show in About widget
 interests:
-  - Robotics
   - Motion Planning
-  - Reinforcement Learning
-  - Foundation Models
+  - Robot Learning
+  - World Models
+  - Embodied Intelligence
 
 # Education to show in About widget
 education:
@@ -81,6 +81,9 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am  currently a senior PhD student in [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I received my master's degree from University of Southern California and bachelor's degree from Nanjing University of Information Science & Technology. 
+I am a PhD student in the [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I also work with Prof. [Hanbo Zhang](https://zhanghanbo.github.io/) and [Jun Lv](https://lyuj1998.github.io/) through a joint lab between the [Shanghai Innovation Institute](https://www.sii.edu.cn/) and [Noematrix](https://www.noematrix.ai/), focusing on robotic manipulation.
 
-My primary research interests include motion planning, reinforcement learning, and whole-body loco-manipulation. My current work focuses on kinodynamics adaptation across heterogeneous autonomous robot fleets and humanoid robot learning.
+While pursuing my M.S. at the University of Southern California, I worked with Prof. [Eshed Ohn-Bar](https://eshed1.github.io/) at [Boston University](https://www.bu.edu/) on visual odometry and motion estimation.
+
+My research interests lie at the intersection of motion planning, robot learning, world models, and embodied intelligence. I am particularly interested in learning structured and transferable representations of physical interaction from large-scale robot data and leveraging them for prediction, planning, adaptation, and control across diverse embodiments and real-world environments.
+
