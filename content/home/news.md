@@ -49,6 +49,7 @@ design:
 #     date_end: '2020-12-31'
 #     description: Taught electronic engineering and researched semiconductor physics.
 ---
+- **SEP 2026:** {{< icon name="user-graduate" pack="fas" >}}Passed my PhD Thesis Proposal!
 - **JUL 2026:** {{< icon name="award" pack="fas" >}}Awarded [IROS RAS Travel Grant](https://2026.ieee-iros.org/attend/ras-member-support/) to attend **IROS 2026**!
 - **JUN 2026:** {{< icon name="pencil-alt" pack="fas" >}}[VertiAdaptor](https://arxiv.org/abs/2603.06887) and [TNT](https://people.cs.gmu.edu/~xiao/papers/tnt.pdf) have been accepted to **IEEE IROS 2026**.
 - **MAY 2026:** {{< icon name="award" pack="fas" >}}Received [Doctoral Research Scholarship - Tier 1](https://graduate.gmu.edu/financial-support/grants-fellowships-and-awards/internal-funding-resources/doctoral-research). Thanks, GMU!
