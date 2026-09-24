@@ -1,22 +1,23 @@
 ---
-title: 'Verti-WM: A Physics-Aided Exteroceptive World Model for Off-Road Reinforcement Learning'
+title: 'Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - C. Pan
+  - B. Wang
   - T. Xu
+  - D. Kosukhin
+  - Y. Yeung
+  - Y. Lu
   - and X. Xiao
 
-# # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
-#   - ''
-#   - ''
+# Author notes (optional)
+# author_notes:
+  # - 'Equal contribution'
+  # - 'Equal contribution'
 
-date: '2026-09-16'
+date: '2026-09-17'
 doi: ''
 
 # draft: true
@@ -34,7 +35,7 @@ publication_types: ['3']
 publication: 'under review'
 publication_short: ''
 
-abstract: "Reinforcement learning for off-road navigation requires extensive vehicle-terrain interaction data, which are costly to collect in high-fidelity simulation. World models offer a promising alternative by replacing simulator roll-outs during policy optimization. However, an off-road world model must condition state transitions on exteroceptive terrain information, which proprioception alone does not provide. This challenge is further amplified by the need to model both rigid and deformable terrain, where data-driven and physics-based approaches offer complementary strengths. We propose Verti-WM, a physics-aided exteroceptive world model that recurrently fuses a frozen Transformer for rigid terrain and a neuro-symbolic terramechanics model for deformable terrain. Elevation and semantic observations queried from a supplied map at each predicted pose condition fusion, enabling six-degree-of-freedom rollouts for policy optimization without further simulator access. Verti-WM reduces prediction error by 34.6% and 21.7% over data-driven and physics-based baselines, respectively. Policies trained entirely within Verti-WM achieve comparable task success rates while reducing computation time by 23.6X relative to direct training in the high-fidelity simulator. We further validate Verti-WM using real-world data, enabling policy optimization within learned real-world kinodynamics and achieving a 80% success rate on the Verti-4-Wheeler platform, compared with 40% for direct sim-to-real transfer."
+abstract: "While learning from human motions has enabled highly dynamic humanoid skills such as dancing and martial arts in obstacle-free space, traversal through densely cluttered environments remains underexplored. These spaces are three-dimensional and geometrically constrained, requiring scene-aware locomotion that tightly couples whole-body motion with scene geometry for obstacle avoidance. To address these challenges, we present Moving Through Clutter (MTC), a learning-from-demonstration framework for scene-aware humanoid locomotion. To bypass costly physical scene construction, MTC uses procedurally generated Virtual Reality environments for immersive data collection. To transform these human motions into training-ready humanoid motions, we propose a scene-aware motion retargeting algorithm that converts human demonstrations into humanoid trajectories while strictly enforcing robot-scene clearance to guarantee collision-free traversal. These reference trajectories are then used to train a scene-aware locomotion policy that deploys on a Unitree G1 humanoid. Evaluated on our proposed MTC-Challenge for multi-obstacle traversal, the policy demonstrates a 70.2% collision-free rate across diverse scenarios, successfully traversing complex environments through diverse whole-body skills, including crawling through low-clearance passages and squeezing through narrow gaps."
 
 
 # Summary. An optional shortened abstract.
@@ -50,7 +51,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2609.23118'
+url_pdf: 'https://arxiv.org/abs/2609.21107'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -62,7 +63,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: '**Verti-WM**'
+  caption: '**MTC**'
   focal_point: ''
   preview_only: false
 

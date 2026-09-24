@@ -61,6 +61,9 @@ url_slides: ''
 url_source: ''
 url_video: 'https://www.youtube.com/watch?v=Shcalb8sGcA'
 
+# Custom thumbnail size for list view (optional, overrides default 500x250)
+thumbnail_size: "480x240"
+
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:

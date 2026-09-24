@@ -31,18 +31,26 @@
 {{ end }}
 
 <div class="media stream-item">
-  {{/* Image on the left */}}
+  {{/* Image or video on the left */}}
   <div class="mr-3">
     {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
-    {{ with $resource }}
-    {{ $image := . }}
-    {{ if ne .MediaType.SubType "gif" }}
-      {{ $image = .Fit "500x250" }}
+    {{ $video_resource := ($item.Resources.ByType "video").GetMatch "*featured*" }}
+    {{ if $resource }}
+    {{ $image := $resource }}
+    {{ if ne $resource.MediaType.SubType "gif" }}
+      {{ $fit_size := $item.Params.thumbnail_size | default "500x250" }}
+      {{ $image = $resource.Fit $fit_size }}
     {{ end }}
     <a href="{{$item.RelPermalink}}">
       <img src="{{ $image.RelPermalink }}" alt="{{ $item.Title }}">
     </a>
-    {{end}}
+    {{ else if $video_resource }}
+    <a href="{{$item.RelPermalink}}">
+      <video autoplay loop muted playsinline style="max-width: 600px; max-height: 300px; display: block;">
+        <source src="{{ $video_resource.RelPermalink }}" type="video/mp4">
+      </video>
+    </a>
+    {{ end }}
   </div>
 
   {{/* Text content on the right */}}

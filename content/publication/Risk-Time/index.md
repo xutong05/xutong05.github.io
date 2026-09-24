@@ -1,22 +1,22 @@
 ---
-title: 'Verti-WM: A Physics-Aided Exteroceptive World Model for Off-Road Reinforcement Learning'
+title: 'Determinization-Guided Planning for Multi-Robot Multi-Goal Navigation under Terrain-Dependent Robot Failure'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - C. Pan
+  - M. Ogunsina
+  - A. Paudel
   - T. Xu
-  - and X. Xiao
+  - X. Xiao
+  - and G. Stein
 
-# # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
-#   - ''
-#   - ''
+# Author notes (optional)
+# author_notes:
+  # - 'Equal contribution'
+  # - 'Equal contribution'
 
-date: '2026-09-16'
+date: '2026-09-12'
 doi: ''
 
 # draft: true
@@ -34,7 +34,7 @@ publication_types: ['3']
 publication: 'under review'
 publication_short: ''
 
-abstract: "Reinforcement learning for off-road navigation requires extensive vehicle-terrain interaction data, which are costly to collect in high-fidelity simulation. World models offer a promising alternative by replacing simulator roll-outs during policy optimization. However, an off-road world model must condition state transitions on exteroceptive terrain information, which proprioception alone does not provide. This challenge is further amplified by the need to model both rigid and deformable terrain, where data-driven and physics-based approaches offer complementary strengths. We propose Verti-WM, a physics-aided exteroceptive world model that recurrently fuses a frozen Transformer for rigid terrain and a neuro-symbolic terramechanics model for deformable terrain. Elevation and semantic observations queried from a supplied map at each predicted pose condition fusion, enabling six-degree-of-freedom rollouts for policy optimization without further simulator access. Verti-WM reduces prediction error by 34.6% and 21.7% over data-driven and physics-based baselines, respectively. Policies trained entirely within Verti-WM achieve comparable task success rates while reducing computation time by 23.6X relative to direct training in the high-fidelity simulator. We further validate Verti-WM using real-world data, enabling policy optimization within learned real-world kinodynamics and achieving a 80% success rate on the Verti-4-Wheeler platform, compared with 40% for direct sim-to-real transfer."
+abstract: "We study concurrent multi-robot, multi-goal navigation in which a terrain traversal can permanently immobilize a robot, and the robots that remain must still visit every goal. Solving this exactly requires full probabilistic planning. In practice the problem is determinized and planned with a fixed cost per traversal that keeps time or risk, which cannot represent whether another robot could still cover a goal after a failure. We introduce a RISK-TIME value function, that accounts for travel time, failure cost, and the coverage that remains after a failure. It is computed from a determinized version of the problem, and the same function serves determinized planning as a cost per traversal and probabilistic planning as a state value. With failure probabilities fit to off-road traversals, it reduces mean expected cost by 29--43% across the synthetic terrain layouts relative to a time-only baseline, and by 5.9% relative to a risk-only baseline. Probabilistic planning with it yields a further benefit at larger teams, but not consistently more than determinized planning with the same function. The choice between the two can therefore follow the computation available to the team at planning time."
 
 
 # Summary. An optional shortened abstract.
@@ -50,7 +50,7 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2609.23118'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -62,7 +62,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: '**Verti-WM**'
+  caption: '**Risk-Time**'
   focal_point: ''
   preview_only: false
 

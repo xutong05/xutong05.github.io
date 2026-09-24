@@ -140,3 +140,14 @@ body.modal-open {
   padding-bottom: 0 !important;
 }
 
+/* Allow publication list thumbnails to exceed the theme's 150px cap */
+.media.stream-item img {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .media.stream-item img {
+    max-width: 100%;
+  }
+}
+
