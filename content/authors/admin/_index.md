@@ -81,7 +81,7 @@ email: 'txu25@gmu.edu'
 highlight_name: true
 ---
 
-I am currently a PhD candidate in the [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I will also work with Prof. [Hanbo Zhang](https://zhanghanbo.github.io/) and [Jun Lv](https://lyuj1998.github.io/) through a joint lab between the [Shanghai Innovation Institute](https://www.sii.edu.cn/) and [Noematrix](https://www.noematrix.ai/), focusing on robotic manipulation.
+I am a PhD candidate in the [RobotiXX Lab](https://robotixx.cs.gmu.edu/) at George Mason University, advised by Prof. [Xuesu Xiao](https://people.cs.gmu.edu/~xiao/). I will work with Prof. [Hanbo Zhang](https://zhanghanbo.github.io/) and [Jun Lv](https://lyuj1998.github.io/) through a joint lab between the [Shanghai Innovation Institute](https://www.sii.edu.cn/) and [Noematrix](https://www.noematrix.ai/), focusing on robotic manipulation.
 
 While pursuing my M.S. at the University of Southern California, I worked with Prof. [Eshed Ohn-Bar](https://eshed1.github.io/) at [Boston University](https://www.bu.edu/) on visual odometry and motion estimation.
 
